@@ -36,8 +36,11 @@ $primitivos: (
 
   "exito-50": #ecfdf5,
   "exito-300": #6ee7b7,
-  "exito-700": #047857,
+  "exito-700": #047756,
   "exito-950": #022c22,
+
+  "error-300": #e76e82,
+  "error-700": #770417,
 );
 
 // -------------------------------------------------------------
@@ -61,6 +64,7 @@ $tema: (
   "exito-tenue": ("exito-50", "exito-950"),
   "foco": ("acento-700", "acento-400"),
   // TODO Fase 1: añade los que necesites (error, aviso, desactivado…)
+  "error": ("error-700", "error-300"),
 );
 
 // -------------------------------------------------------------

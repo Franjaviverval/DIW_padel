@@ -49,3 +49,14 @@
 | Control de la cascada | | | |
 
 **Decisión y motivo:**
+
+La ruta de trabajo escogida sera la B -> VsCode.
+
+1. Los colores escogidos de acento tienen el grado 22 (anaranjado). Cada uno de los acentos tiene una nivel de iluminación
+diferente de mayor a menor. Acento-50 tiene una iluminacion del 95%, mientras que el acento-950 tiene una iluminación del 11%.
+Para hacerlo utilice los colores con hsl y fui moviendo la iluminación.
+
+El acento de texto/fondo es el 700 en claro y el 400 en oscuro. se necesita un acento mas claro en el fondo oscuro y un acento mas oscuro
+sobre el fondo claro.
+
+Se utilizan los tokens semánticos para no tener que usar los primitvos directamente. Al usar tokens si se realiza un cambio en los primitivos, no tienes que cambiarlo en todos los lugares en los que se usa.

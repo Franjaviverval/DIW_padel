@@ -136,6 +136,19 @@
     max-inline-size: 65ch;
     text-wrap: pretty;
   }
+  small {
+    font-size: var(--paso-0);
+  }
+  strong {
+    font-weight: bold;
+  }
+  label {
+    font-size: var(--paso-2);
+  }
+  table, th, td {
+    text-align: right;
+    border: 1px solid;
+  }
 }
 @layer layout {
   .contenedor {
