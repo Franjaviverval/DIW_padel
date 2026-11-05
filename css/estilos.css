@@ -11,9 +11,10 @@
     --color-acento-hover: light-dark(#662500, #ff9e66);
     --color-sobre-acento: light-dark(#fff, #0f172a);
     --color-acento-tenue: light-dark(#ffefe5, #1a0900);
-    --color-exito: light-dark(#047857, #6ee7b7);
+    --color-exito: light-dark(#047756, #6ee7b7);
     --color-exito-tenue: light-dark(#ecfdf5, #022c22);
     --color-foco: light-dark(#802f00, #ff7e33);
+    --color-error: light-dark(#770417, #e76e82);
     --paso-menos-1: clamp(0.8333rem, 0.8111rem + 0.099vw, 0.9rem);
     --paso-0: clamp(1rem, 0.9583rem + 0.185vw, 1.125rem);
     --paso-1: clamp(1.2rem, 1.1312rem + 0.306vw, 1.4063rem);
@@ -145,9 +146,14 @@
   label {
     font-size: var(--paso-2);
   }
-  table, th, td {
+  table,
+  th,
+  td {
     text-align: right;
-    border: 1px solid;
+    border: 1px solid var(--color-borde);
+  }
+  fieldset {
+    border: 1px solid var(--color-acento);
   }
 }
 @layer layout {
@@ -212,6 +218,15 @@
     border-radius: var(--radio-tarjeta);
     background-color: var(--color-superficie);
     cursor: pointer;
+  }
+  .turno:has(:checked) {
+    color: var(--color-exito);
+  }
+  .turno:has(:disabled) {
+    color: var(--color-error);
+  }
+  .turno .turno__control {
+    appearance: none;
   }
 }
 @layer components {
@@ -286,6 +301,36 @@
     float: inline-start;
     margin-inline-end: var(--espacio-2xs);
     font-weight: 700;
+  }
+}
+@layer components {
+  .invitados {
+    display: flex;
+    justify-content: center;
+    gap: var(--espacio-m);
+    padding: var(--espacio-s);
+    margin: 0;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-tarjeta);
+    background-color: var(--color-superficie);
+    cursor: pointer;
+  }
+}
+.invitados__invitado:has(:checked) {
+  color: var(--color-acento);
+}
+
+@layer components {
+  .avisos {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-m);
+    padding: var(--espacio-s);
+    margin: 0;
+    border: 1px solid var(--color-acento);
+    border-radius: var(--radio-tarjeta);
+    background-color: var(--color-acento-tenue);
+    font-family: var(--fuente-mono);
   }
 }
 @layer utilities {

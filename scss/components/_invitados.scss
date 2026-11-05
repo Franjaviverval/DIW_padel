@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+@layer components {
+  .invitados {
+    display: flex;
+    justify-content: center;
+    gap: var(--espacio-m);
+    padding: var(--espacio-s);
+    margin: 0;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-tarjeta);
+    background-color: var(--color-superficie);
+    cursor: pointer;
+  }
+}
+
+.invitados__invitado:has(:checked) {
+  color: var(--color-acento);
+}

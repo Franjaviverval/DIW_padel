@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+@layer components {
+  .avisos {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-m);
+    padding: var(--espacio-s);
+    margin: 0;
+    border: 1px solid var(--color-acento);
+    border-radius: var(--radio-tarjeta);
+    background-color: var(--color-acento-tenue);
+    font-family: var(--fuente-mono);
+  }
+}

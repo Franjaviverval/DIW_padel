@@ -35,6 +35,18 @@
     cursor: pointer;
 
     // TODO: .turno__control, .turno__hora, .turno__estado
+    &:has(:checked) {
+      color: var(--color-exito);
+    }
+
+    &:has(:disabled) {
+      color: var(--color-error);
+    }
+
     // TODO: estados seleccionado, ocupado y foco
+  }
+
+  .turno .turno__control {
+    appearance: none;
   }
 }

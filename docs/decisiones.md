@@ -60,3 +60,11 @@ El acento de texto/fondo es el 700 en claro y el 400 en oscuro. se necesita un a
 sobre el fondo claro.
 
 Se utilizan los tokens semánticos para no tener que usar los primitvos directamente. Al usar tokens si se realiza un cambio en los primitivos, no tienes que cambiarlo en todos los lugares en los que se usa.
+
+2. He mantenido el que venia predefinido porque se ve bien
+
+3. He mantenido los de la plantilla
+
+4. Para los componentes he utilizado los estado que pedia el enunciado como :checked, :has :focus-visible :disabled
+para establecer los estilos de cada uno de los estados. Se ha mantenido la especificidad de (0,2,0) que se exige en la
+práctica.
